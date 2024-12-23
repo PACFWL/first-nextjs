@@ -4,7 +4,7 @@ import User from '../../models/User';
 export default async function handler(req, res) {
   const { method } = req;
 
-  await dbConnect(); // Conecta a MongoDB
+  await dbConnect(); 
 
   switch (method) {
     case 'GET':
